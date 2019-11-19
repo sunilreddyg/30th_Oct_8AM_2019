@@ -11,7 +11,7 @@ Html Source:-->
 	Note:-->  Where Object contains Select tag only we Consider as dropdown
 					or combobox, In webdriver Dropdown to select separate 
 					commands available.These commands only we can use for
-					select elements.
+					select tag elements.
 
 				Syntax:--->to select dropdown option
 			
@@ -90,8 +90,7 @@ htmlsource:--->
 Example:---> Select UK option from dropdown using index
 
 Syntax:-->
-		Select ref=new Select(driver.findElement(By.name("Country"));
-		ref.selectbyindex(1);
+		new Select(driver.findElement(By.id("Country"))).SelectByindex(1);
 ============================================================
 ismultiple:---->
 
