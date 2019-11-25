@@ -132,7 +132,7 @@ Partial CssSelector:-->
 	Target Web element location with partial attributes.
 
 		=>    *   [ Any matching characters]
-		=>    $  [End characters]
+		=>    $   [End characters]
 		=>    ^   [Start characters]
 
 Example:--> target element with matching characters
@@ -168,13 +168,11 @@ HtmlSource:-->
 		<input id="9ju7yg876"  type="text">  ---->Target Element
 	</div>	
 
-
-
 	Syntax:-->
 		parentnode  > childnode...
 
-		By.cssSelector("div[id='login_conainer'] >  input")
-
+		By.cssSelector("div[id='login_conainer'] > input")
+		By.cssSelector("#login_conainer > input")
 ====================================================================
 
 HtmlSource:--> parent and child identification using  <<SPACE>>
@@ -185,7 +183,7 @@ HtmlSource:--> parent and child identification using  <<SPACE>>
 			<input id="9ju7yg876"  type="text">  ---->Target Element
 		</div>
 	</div>	
-
+	
 Syntax:-->
 		parentnode  <space> childnode...
 
@@ -199,15 +197,32 @@ HtmlSource:--> Identify Required node with help of sibling node..
 	</div>	
 
 
-
 		By.cssSelector("label[id='email-login'] + input")
+======================================================================
+HtmlSource:--> Identify Required node with help of sibling node..
+
+	<div class="demo">
+		<label id="email-login"> <label>
+		<input id="9ju7yg876"  type="text">  ---->Target Element
+	</div>	
 
 
+		By.cssSelector("label[id='email-login'] ~ input")
 
+======================================================================
+HtmlSource:--> IDentify Requied node when all child nodes are duplicate
 
-
-
-
-
+		<div id="container">
+			<div name="login"> <div>
+			<span name="login"> <span>
+			<div name="login"> <div>
+			<div name="login"> <div>           ===> TargetElement
+		</div>	
+		
+		
+		By.cssSelector("#container > div:nth-child(4)")
+		By.cssSelector("#container > div:nth-last-child(1)")
+		By.cssSelector("#container > div:nth-of-type(3)")
+====================================================================
 
 
