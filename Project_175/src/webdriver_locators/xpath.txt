@@ -79,6 +79,25 @@ Automation browser session:-->
 
 
 	       		//*[contains(@id,'email')]
+	       		
+===================================================================
+To identify Xpath using  AND function.
+
+		//tagname[@prop='pvalue' and  @prop='pvalue']
+		//tagname[@prop='pvalue' and  text()='innertext']	   
+		
+		
+To identify xpath using OR function.		
+		
+		//tagname[@prop='pvalue' or  @prop='pvalue']
+		//tagname[@prop='pvalue' or  text()='innertext']	   
+			
+To Recognize object with multiple attributes
+					[using <OR> <And> comparision]		
+			 
+		//*[@prop='pvalue' and (@prop='pvalue' or  @prop='pvalue')]
+		//*[@prop='pvalue' or (@prop='pvalue' and  @prop='pvalue')]
+	       		
 ===================================================================..
 Example:-->  Target Element with parent Node.
 
@@ -94,8 +113,6 @@ HtmlSource:-->
 		By.xpath("//div[@id='login_conainer']/input")
 
 =====================================================================
-		
-		
 		
 		
 		
