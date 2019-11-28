@@ -208,10 +208,10 @@ HtmlSource:-->
 	Syntax:-->
 			//SiblingElement/following-sibling::tagname
 		
-		   by.xpath("//input[@id='firstname']/following-sibling::div")
+		   by.xpath("//input[id='firstname']/following-sibling::div")
 		
 --------------------------------------------------------------------------------		
-Example9:-->
+Example10:-->
 		Recognize object using following sibling. When multiple Element Available
 
 HtmlSource:-->
@@ -229,7 +229,7 @@ HtmlSource:-->
 		    By.xpath("//li[@class='roundtrip']/following-sibling::div")
 		
 ---------------------------------------------------------------------------
-Example9:-->
+Example11:-->
 		Recognize object using preceding sibling
 
 HtmlSource:-->
@@ -246,7 +246,7 @@ HtmlSource:-->
 	    By.xpath(//input[@id='firstname']/preceding-sibling::div")
 		
 --------------------------------------------------------------------------------		
-Example10:-->
+Example12:-->
 		Recognize object using preceding sibling. When multiple Element Available
 
 HtmlSource:-->
@@ -259,10 +259,34 @@ HtmlSource:-->
 					<input id="firstname" name="new">    
 		</div>	
 		
-		
 		syntax:-->
 				By.xpath("//input[@id='firstname']/preceding-sibling::div[2]")
+=================================================================================
+Example13:-->
+		Target objet at ancestor node.
 
-
-
-
+		<div class="origin">      ----->Target
+				<div class="origin">            
+				<input id="firstname" name="new">      ----->Source
+		</div>
+		
+		Syntax:-->
+							<<  ancestor::tagname  >>
+				By.xpath("//input[@id='firstname']/ancestor::div[class='origin']")
+==================================================================================				
+Example14:-->		
+		Target any node at descendant list.
+		
+		<div id="origin">      ----->Source
+				<div class="new">   
+					<input id="9790jk9iok" >  ------Target         
+				</div>
+		</div>
+		
+		Syntax:-->
+							<<  descendant::tagname  >>
+			By.xpath("//input[@id='firstname']/descendant::input")
+===============================================================================
+		
+		
+		
