@@ -1,0 +1,59 @@
+Keyboard interactions:-->
+
+Sendkeys:-->
+		Sendkeys is allowed keybaord interactions on
+		selected target, At the same it allows to perform
+		action on active locations at webpage.
+		
+		
+		=> To perform keyboard action at active location
+			
+				new Actions(driver).Sendkeys(Keys.TAB).perform();
+				
+		=> To Perform keyboard action at Selected Element.
+		
+				WebElement Element=driver.findElement(By.Id("IdValue"));
+				new Actions(Element, Keys.TAB).perform();
+				
+		Note:--> Sendkeys method all All charcter sequnces and keyboard shortcus.
+				      
+				      
+KeyDown:-->
+		Method only usefull downkeys to control [Ctrl,Alt,Shift],
+		Using keydown method we can hold down the keyboard keys partially
+		before permoring actions at webpage.
+		
+		
+		new Action(driver).Keydown(keys.CONTROL).perform();
+		
+KeyUp:-->
+			Method release DownKeys which is already Holded.
+			
+		new Actions(driver).keyup(keys.CONTROL).perform();
+		
+===========================================================================
+Build:-->
+		method build sequences of keyboard and mouse interaction into single
+		Action.
+		
+		new Action(driver).ClickAndHold(SRC).MovetoElement(DST)
+		.Release().build().perform();
+		
+		
+pause:--> 
+		provide interval time between any keyboard /mouse actions.		
+		[Pause time gap should define in milli-seconds]
+		
+		new Actions(driver).sendkeys(keys.TAB).pause(2000)
+		.sendkeys(keys.TAB).perform();
+		
+perform:-->
+		while using mouse and keyboard interaction in "Actions" class,
+		We should end Any single interaction or multiple with Perform 
+		method.
+		
+		new Actions(driver).Sendkeys(keys.ENTER).perform();
+		
+		
+		
+		
