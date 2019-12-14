@@ -1,7 +1,7 @@
  Frame:--->
 	* a frame is a part of a web page or browser window 
 	* Frame has ability to load content independent like webpage.
-	* In selenium under frame source any elemen to identify, First
+	* In selenium, under frame source any elemen to identify, First
 		we need to switch controls from webpage to frame.
 		
 
@@ -17,7 +17,20 @@ How to identify frame at Webpage:-->
 			=> We can also find frame using Truepath plugin.
 					=> For frame under elemnets truepath plugin genarate
 							separate xpath.
-	
+							
+How many ways we can switch to frame:-->
+
+		=> Switch to frame with frame ID/Name Property
+		driver.switchto().frame("FrameID/Name");
+		
+		=> Switch to frame with other Locators
+		driver.switchto().frame(WebElement);
+		driver.switchto().frame(driver.findElement(By.Classname("Class")));
+		
+		=> Switch to frame using frame index number at htmlsource.
+		driver.switchto().frame(int indexnum);						
+							
+							
 ----------Html source for frame elements------------------>
 <html>
 <body>
@@ -49,24 +62,24 @@ Syntax:--->
 	driver.switchTo().frame(WebElement Element);
 
 
-Example:--->Target firstname object
-		using above source find Frame Elemnet 
+Example:--->Target firstname object at above HTML-Source 
 		
 		WebElemen Frame_Element_ref=driver.findELement(By.xpath("//frame[@class='reg_account']"));
 		driver.switchTo().frame(Frame_Element_ref);
+		//Identifying location under frame..
 		driver.findElement(By.id("firstname"));
 ---------------------------------------------------------------------------------------------------->
 Example:-->
-	Switch to frame using  frame name:---->
+	Switch to frame using  frame ID/Name property
 
 	Syntax:--->
 	driver.switchTo().frame(String framename);
 
 Example:--->
-		using above source find Frame Elemnet 
+		Target firstname object at above HTML-Source 
 	
-		driver.switchTo().frame("f1");
-		driver.switchTo().frame("newframe");
+		driver.switchTo().frame("f1");         //With Frame name property
+		driver.switchTo().frame("newframe");   //With Frame Id proeprty
 		
 		==> Identify location under frame
 		driver.findElement(By.id("firstname"));
@@ -79,10 +92,9 @@ Syntax:--->
 	driver.switchTo().frame(int index);
 
 Example:--->
-		using above source find Frame Elemnet 
+		Target firstname object at above HTML-Source 
 	
 		driver.switchTo().frame(0);
-		
 		==> Identify location under frame
 		driver.findElement(By.id("firstname"));
 
