@@ -1,0 +1,27 @@
+Link:--> 
+	=> Link Load webpage in current window.
+	<a  hrer="http://fb.com/Signup"> Signup </a>
+
+Hyperlink:-->
+
+	=> Hyperlink load webpage at New window.
+	<a  targer="_new"  hrer="http://fb.com/games"> Games </a>
+
+
+	
+	=> Click Hyperlink [It Open a page at new window]
+	driver.findElement(By.Linktext("Games")).click();
+
+	=> Switch to window using Hyper link target property....
+	driver.switchTo().window("_new');
+
+
+	Note:-->  
+		=> Developers most of the time target property
+		      define as  blank.   
+			
+			< a  target="_blank" > Linkname </a>
+
+		=> Don't use target property when it was define
+			as blank.
+==========================================================...
