@@ -1,5 +1,8 @@
 package interactions.Mouse;
 
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -32,6 +35,8 @@ public class ContextClick_RightClick_On_Element {
 		//close Alert 
 		Thread.sleep(5000);
 		driver.switchTo().alert().accept();
+		
+	
 	}
 
 }
