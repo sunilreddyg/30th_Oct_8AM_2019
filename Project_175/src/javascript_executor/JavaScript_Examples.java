@@ -17,10 +17,8 @@ public class JavaScript_Examples
 		driver.get("https://www.facebook.com/");
 		driver.manage().window().maximize();
 		
-		
 		//Create Interface for JsExecutor
 		JavascriptExecutor js=((JavascriptExecutor)driver);
-		
 		
 		//return current window title
 		String Runtime_title=js.executeScript("return document.title").toString();
