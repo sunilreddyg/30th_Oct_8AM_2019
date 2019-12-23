@@ -113,46 +113,46 @@ titleIs:--->
 titleContains:-->
 		An expecation to verify expected or parital title presented...
 				
-				
-		titleContains command without Webdriverwait:----->
-		
-			boolean flag=ExpectedConditions.titleContains("Exp_parial_title").apply(driver);
-			System.out.println("Expected title available status "+flag)
+			
+	titleContains command without Webdriverwait:----->
+	
+		boolean flag=ExpectedConditions.titleContains("Exp_parial_title").apply(driver);
+		System.out.println("Expected title available status "+flag)
 
-		titleContains command with Webdriverwait:----->
+	titleContains command with Webdriverwait:----->
 
-			WebdriverWait  wait=new WebDriverwait(driver,100);
-			wait.until(ExpectedConditions.titleContais("title or partial title"));
+		WebdriverWait  wait=new WebDriverwait(driver,100);
+		wait.until(ExpectedConditions.titleContais("title or partial title"));
 =====================================================================================
 			
 urltobe:--->
 		An expecation to verify expected url presented at webpage
 			
 						
-		urltobe command without Webdriverwait:----->
+	urltobe command without Webdriverwait:----->
 		
-			boolean flag=ExpectedConditions.urltobe("Exp_url").apply(driver).booleanValue();
-			System.out.println("Expected url available status "+flag)
-			
+		boolean flag=ExpectedConditions.urltobe("Exp_url").apply(driver);
+		System.out.println("Expected url available status "+flag)
 		
-		urltobe command with Webdriverwait:----->
+	
+	urltobe command with Webdriverwait:----->
 
-			WebdriverWait  wait=new WebDriverwait(driver,100);
-			wait.until(ExpectedConditions.urltobe("Expectdurl"));	
+		WebdriverWait  wait=new WebDriverwait(driver,100);
+		wait.until(ExpectedConditions.urltobe("Expectdurl"));	
 =====================================================================================
 		
 urlcontains:--->
 
-		urlcontains command without Webdriverwait:----->
+	urlcontains command without Webdriverwait:----->
+	
+		boolean flag=ExpectedConditions.urlcontains("Exp_url_or_partial").apply(driver).booleanValue();
+		System.out.println("Expected url available status "+flag)
 		
-			boolean flag=ExpectedConditions.urlcontains("Exp_url_or_partial").apply(driver).booleanValue();
-			System.out.println("Expected url available status "+flag)
-			
-		
-		urlcontains command with Webdriverwait:----->
+	
+	urlcontains command with Webdriverwait:----->
 
-			WebdriverWait  wait=new WebDriverwait(driver,100);
-			wait.until(ExpectedConditions.urlcontains("Expectdurl_or_partial"));
+		WebdriverWait  wait=new WebDriverwait(driver,100);
+		wait.until(ExpectedConditions.urlcontains("Expectdurl_or_partial"));
 ====================================================================================
 			
 visibilityOfElementLocated:-->
@@ -160,9 +160,9 @@ visibilityOfElementLocated:-->
 		An expectation to verify expected element visible at webpage	
 			
 Example:--> Manage Explicit wait until element visible at webpage.
-		
-		WebdriverWait  wait=new WebDriverwait(driver,100);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("x")));
+	WebdriverWait  wait=new WebDriverwait(driver,100);
+	wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("x")));
+	wait.until(ExpectedConditions.visibilityOf(WebElemnet Element));
 =================================================================================
 
 InvisiblityofElementLocated:-->
@@ -184,7 +184,7 @@ Example:--> Manage explicitwait until expected object found at DOM.
 ===============================================================================
 ElementTobeClickable:-->
 		An Expecation to verify element is clickable.[Buttons,Links --etc]
-		->use on exception [Element not clickable position]
+		->use only on exception [Element not clickable at position]
 Example:-->
 		manage explicit wait until element receive enable state to perform actions.
 		
