@@ -39,9 +39,8 @@ public class FlipKart_Group_Products {
 				String ProductName=Product_Name_loc.getText();
 				System.out.println(ProductName);
 				
-				
-				
 			}
+			
 			
 			
 			if(Next_link.isDisplayed())
@@ -49,8 +48,17 @@ public class FlipKart_Group_Products {
 			
 			
 			//Restore reference to avoid stalelement reference exception
-			Thread.sleep(3000);
-			Next_link=driver.findElement(By.xpath("//span[text()='Next']"));
+			try {
+				Thread.sleep(3000);
+				Next_link=driver.findElement(By.xpath("//span[text()='Next']"));
+				
+			} catch (Exception e) {
+				System.out.println(e.getMessage());
+				break;
+			}
+			
+			
+			
 			
 		} while (Next_link.isDisplayed());
 		
