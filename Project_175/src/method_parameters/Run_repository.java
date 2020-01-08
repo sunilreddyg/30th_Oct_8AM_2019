@@ -37,6 +37,9 @@ public class Run_repository
 		Thread.sleep(5000);
 		
 		obj.capturescreen("Insta window");
+		
+		
+		
 	}
 
 }
