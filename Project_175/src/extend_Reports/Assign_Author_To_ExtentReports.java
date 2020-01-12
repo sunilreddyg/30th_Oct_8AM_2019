@@ -23,7 +23,7 @@ public class Assign_Author_To_ExtentReports {
 			logger.endTest(test1);
 			
 			
-			Map sysInfo = new HashMap();
+			Map<String, String> sysInfo = new HashMap<String, String>();
 			sysInfo.put("Selenium Version", "3.14");
 			sysInfo.put("Environment", "Windows");
 			logger.addSystemInfo(sysInfo);
