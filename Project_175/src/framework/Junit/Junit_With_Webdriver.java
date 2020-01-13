@@ -1,10 +1,8 @@
 package framework.Junit;
 
-import static org.junit.jupiter.api.Assertions.*;
 
 import java.io.File;
 import java.util.concurrent.TimeUnit;
-
 import org.apache.commons.io.FileUtils;
 import org.junit.Assert;
 import org.junit.jupiter.api.AfterAll;
