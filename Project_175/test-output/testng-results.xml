@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="5" failed="1" ignored="0" total="8" passed="2">
+  <reporter-output>
+    <line>
+      <![CDATA[Browser launch successfull]]>
+    </line>
+    <line>
+      <![CDATA[Load application successfull]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="109" started-at="2020-01-20T10:15:17 IST" finished-at="2020-01-20T10:15:17 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="109" started-at="2020-01-20T10:15:17 IST" finished-at="2020-01-20T10:15:17 IST">
+      <class name="framework_testng.Testng_Method_Dependencies">
+        <test-method status="PASS" signature="SetUp_browser()[pri:0, instance:framework_testng.Testng_Method_Dependencies@5c5a1b69]" name="SetUp_browser" is-config="true" duration-ms="11" started-at="2020-01-20T10:15:17 IST" finished-at="2020-01-20T10:15:17 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp_browser -->
+        <test-method status="PASS" signature="Browser_launch()[pri:0, instance:framework_testng.Testng_Method_Dependencies@5c5a1b69]" name="Browser_launch" duration-ms="8" started-at="2020-01-20T10:15:17 IST" finished-at="2020-01-20T10:15:17 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Browser launch successfull]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Browser_launch -->
+        <test-method status="PASS" signature="App_Load()[pri:1, instance:framework_testng.Testng_Method_Dependencies@5c5a1b69]" name="App_Load" duration-ms="1" started-at="2020-01-20T10:15:17 IST" depends-on-methods="framework_testng.Testng_Method_Dependencies.Browser_launch" finished-at="2020-01-20T10:15:17 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Load application successfull]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- App_Load -->
+        <test-method status="FAIL" signature="User_login()[pri:2, instance:framework_testng.Testng_Method_Dependencies@5c5a1b69]" name="User_login" duration-ms="1" started-at="2020-01-20T10:15:17 IST" depends-on-methods="framework_testng.Testng_Method_Dependencies.App_Load" finished-at="2020-01-20T10:15:17 IST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [email] but found [mail]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [email] but found [mail]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:575)
+at org.testng.Assert.assertEquals(Assert.java:585)
+at framework_testng.Testng_Method_Dependencies.User_login(Testng_Method_Dependencies.java:37)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- User_login -->
+        <test-method status="SKIP" signature="ComposeEmail()[pri:3, instance:framework_testng.Testng_Method_Dependencies@5c5a1b69]" name="ComposeEmail" duration-ms="0" started-at="2020-01-20T10:15:17 IST" depends-on-methods="framework_testng.Testng_Method_Dependencies.User_login" finished-at="2020-01-20T10:15:17 IST">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method Testng_Method_Dependencies.ComposeEmail()[pri:3, instance:framework_testng.Testng_Method_Dependencies@5c5a1b69] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method Testng_Method_Dependencies.ComposeEmail()[pri:3, instance:framework_testng.Testng_Method_Dependencies@5c5a1b69] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:99)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ComposeEmail -->
+        <test-method status="SKIP" signature="Search_email()[pri:4, instance:framework_testng.Testng_Method_Dependencies@5c5a1b69]" name="Search_email" duration-ms="0" started-at="2020-01-20T10:15:17 IST" depends-on-methods="framework_testng.Testng_Method_Dependencies.User_login" finished-at="2020-01-20T10:15:17 IST">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method Testng_Method_Dependencies.Search_email()[pri:4, instance:framework_testng.Testng_Method_Dependencies@5c5a1b69] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method Testng_Method_Dependencies.Search_email()[pri:4, instance:framework_testng.Testng_Method_Dependencies@5c5a1b69] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:99)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Search_email -->
+        <test-method status="SKIP" signature="Verify_Email_At_inbox()[pri:5, instance:framework_testng.Testng_Method_Dependencies@5c5a1b69]" name="Verify_Email_At_inbox" duration-ms="0" started-at="2020-01-20T10:15:17 IST" depends-on-methods="framework_testng.Testng_Method_Dependencies.User_login" finished-at="2020-01-20T10:15:17 IST">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method Testng_Method_Dependencies.Verify_Email_At_inbox()[pri:5, instance:framework_testng.Testng_Method_Dependencies@5c5a1b69] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method Testng_Method_Dependencies.Verify_Email_At_inbox()[pri:5, instance:framework_testng.Testng_Method_Dependencies@5c5a1b69] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:99)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_Email_At_inbox -->
+        <test-method status="SKIP" signature="Verify_Email_At_Sentemails_AfterSendEmail()[pri:6, instance:framework_testng.Testng_Method_Dependencies@5c5a1b69]" name="Verify_Email_At_Sentemails_AfterSendEmail" duration-ms="0" started-at="2020-01-20T10:15:17 IST" depends-on-methods="framework_testng.Testng_Method_Dependencies.User_login, framework_testng.Testng_Method_Dependencies.ComposeEmail" finished-at="2020-01-20T10:15:17 IST">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method Testng_Method_Dependencies.Verify_Email_At_Sentemails_AfterSendEmail()[pri:6, instance:framework_testng.Testng_Method_Dependencies@5c5a1b69] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method Testng_Method_Dependencies.Verify_Email_At_Sentemails_AfterSendEmail()[pri:6, instance:framework_testng.Testng_Method_Dependencies@5c5a1b69] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:99)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_Email_At_Sentemails_AfterSendEmail -->
+        <test-method status="SKIP" signature="User_Signout()[pri:7, instance:framework_testng.Testng_Method_Dependencies@5c5a1b69]" name="User_Signout" duration-ms="0" started-at="2020-01-20T10:15:17 IST" depends-on-methods="framework_testng.Testng_Method_Dependencies.User_login" finished-at="2020-01-20T10:15:17 IST">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method Testng_Method_Dependencies.User_Signout()[pri:7, instance:framework_testng.Testng_Method_Dependencies@5c5a1b69] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method Testng_Method_Dependencies.User_Signout()[pri:7, instance:framework_testng.Testng_Method_Dependencies@5c5a1b69] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:99)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- User_Signout -->
+        <test-method status="PASS" signature="Close_browser()[pri:0, instance:framework_testng.Testng_Method_Dependencies@5c5a1b69]" name="Close_browser" is-config="true" duration-ms="26" started-at="2020-01-20T10:15:17 IST" finished-at="2020-01-20T10:15:17 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Close_browser -->
+      </class> <!-- framework_testng.Testng_Method_Dependencies -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
