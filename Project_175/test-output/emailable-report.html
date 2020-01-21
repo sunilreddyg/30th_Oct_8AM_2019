@@ -8,18 +8,17 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="7">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">2</td><td class="num attn">5</td><td class="num">0</td><td class="num attn">1</td><td class="num">109</td><td></td><td></td></tr>
+<tr><th colspan="7">default</th></tr>
+<tr><td><a href="#t0">defult</a></td><td class="num">4</td><td class="num attn">1</td><td class="num">0</td><td class="num attn">1</td><td class="num">97</td><td>G1, G3</td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">framework_testng.Testng_Method_Dependencies</td><td><a href="#m0">User_login</a></td><td rowspan="1">1579495517462</td><td rowspan="1">1</td></tr><tr><th colspan="4">Default test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="5">framework_testng.Testng_Method_Dependencies</td><td><a href="#m1">ComposeEmail</a></td><td rowspan="1">1579495517467</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m2">Search_email</a></td><td rowspan="1">1579495517471</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m3">User_Signout</a></td><td rowspan="1">1579495517483</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m4">Verify_Email_At_Sentemails_AfterSendEmail</a></td><td rowspan="1">1579495517479</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m5">Verify_Email_At_inbox</a></td><td rowspan="1">1579495517476</td><td rowspan="1">0</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">framework_testng.Testng_Method_Dependencies</td><td><a href="#m6">App_Load</a></td><td rowspan="1">1579495517459</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m7">Browser_launch</a></td><td rowspan="1">1579495517445</td><td rowspan="1">8</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">default</th></tr></tbody><tbody id="t0"><tr><th colspan="4">defult &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">framework.Testng.Groups.TestSuite3</td><td><a href="#m0">tc007</a></td><td rowspan="1">1579581349682</td><td rowspan="1">5</td></tr><tr><th colspan="4">defult &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">framework.Testng.Groups.TestSuite3</td><td><a href="#m1">tc008</a></td><td rowspan="1">1579581349701</td><td rowspan="1">0</td></tr><tr><th colspan="4">defult &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">framework.Testng.Groups.TestSuite1</td><td><a href="#m2">tc001</a></td><td rowspan="1">1579581349647</td><td rowspan="1">17</td></tr><tr class="passedodd"><td rowspan="2">framework.Testng.Groups.TestSuite2</td><td><a href="#m3">tc004</a></td><td rowspan="1">1579581349672</td><td rowspan="1">3</td></tr><tr class="passedodd"><td><a href="#m4">tc005</a></td><td rowspan="1">1579581349677</td><td rowspan="1">1</td></tr><tr class="passedeven"><td rowspan="1">framework.Testng.Groups.TestSuite3</td><td><a href="#m5">tc009</a></td><td rowspan="1">1579581349694</td><td rowspan="1">2</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">framework_testng.Testng_Method_Dependencies#User_login</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [email] but found [mail]
+<h2>defult</h2><h3 id="m0">framework.Testng.Groups.TestSuite3#tc007</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: did not expect to find [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:97)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:575)
-	at org.testng.Assert.assertEquals(Assert.java:585)
-	at framework_testng.Testng_Method_Dependencies.User_login(Testng_Method_Dependencies.java:37)
+	at org.testng.Assert.failNotEquals(Assert.java:969)
+	at org.testng.Assert.assertTrue(Assert.java:43)
+	at org.testng.Assert.assertTrue(Assert.java:53)
+	at framework.Testng.Groups.TestSuite3.tc007(TestSuite3.java:13)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -49,7 +48,7 @@
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">framework_testng.Testng_Method_Dependencies#ComposeEmail</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method Testng_Method_Dependencies.ComposeEmail()[pri:3, instance:framework_testng.Testng_Method_Dependencies@5c5a1b69] depends on not successfully finished methods
+<h3 id="m1">framework.Testng.Groups.TestSuite3#tc008</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method TestSuite3.tc008()[pri:0, instance:framework.Testng.Groups.TestSuite3@551aa95a] depends on not successfully finished methods in group &quot;G1&quot;
 	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:99)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -70,91 +69,9 @@
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">framework_testng.Testng_Method_Dependencies#Search_email</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method Testng_Method_Dependencies.Search_email()[pri:4, instance:framework_testng.Testng_Method_Dependencies@5c5a1b69] depends on not successfully finished methods
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:99)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(Unknown Source)
-	at org.testng.TestRunner.privateRun(TestRunner.java:770)
-	at org.testng.TestRunner.run(TestRunner.java:591)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-	at org.testng.TestNG.runSuites(TestNG.java:1032)
-	at org.testng.TestNG.run(TestNG.java:1000)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">framework_testng.Testng_Method_Dependencies#User_Signout</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method Testng_Method_Dependencies.User_Signout()[pri:7, instance:framework_testng.Testng_Method_Dependencies@5c5a1b69] depends on not successfully finished methods
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:99)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(Unknown Source)
-	at org.testng.TestRunner.privateRun(TestRunner.java:770)
-	at org.testng.TestRunner.run(TestRunner.java:591)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-	at org.testng.TestNG.runSuites(TestNG.java:1032)
-	at org.testng.TestNG.run(TestNG.java:1000)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">framework_testng.Testng_Method_Dependencies#Verify_Email_At_Sentemails_AfterSendEmail</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method Testng_Method_Dependencies.Verify_Email_At_Sentemails_AfterSendEmail()[pri:6, instance:framework_testng.Testng_Method_Dependencies@5c5a1b69] depends on not successfully finished methods
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:99)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(Unknown Source)
-	at org.testng.TestRunner.privateRun(TestRunner.java:770)
-	at org.testng.TestRunner.run(TestRunner.java:591)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-	at org.testng.TestNG.runSuites(TestNG.java:1032)
-	at org.testng.TestNG.run(TestNG.java:1000)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">framework_testng.Testng_Method_Dependencies#Verify_Email_At_inbox</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method Testng_Method_Dependencies.Verify_Email_At_inbox()[pri:5, instance:framework_testng.Testng_Method_Dependencies@5c5a1b69] depends on not successfully finished methods
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:99)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(Unknown Source)
-	at org.testng.TestRunner.privateRun(TestRunner.java:770)
-	at org.testng.TestRunner.run(TestRunner.java:591)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-	at org.testng.TestNG.runSuites(TestNG.java:1032)
-	at org.testng.TestNG.run(TestNG.java:1000)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">framework_testng.Testng_Method_Dependencies#App_Load</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Load application successfull</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">framework_testng.Testng_Method_Dependencies#Browser_launch</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Browser launch successfull</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">framework.Testng.Groups.TestSuite1#tc001</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">framework.Testng.Groups.TestSuite2#tc004</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">tc004  Executed</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">framework.Testng.Groups.TestSuite2#tc005</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">tc005  Executed</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">framework.Testng.Groups.TestSuite3#tc009</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Tc008 executed</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
